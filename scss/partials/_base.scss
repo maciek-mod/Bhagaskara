@@ -3,15 +3,6 @@
 
 }
 
-//
-// .container {
-//   width: 100%;
-//   max-width: 1170px;
-//   margin: 0 auto;
-//
-//
-// }
-
 .row:before,
 .row:after {
   content : " ";
@@ -23,13 +14,15 @@
   border: 1px solid red;
 }
 
+/*header*/
+
 header{
   background-image: url("../images/header-banner.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   max-width: 2000px;
   padding-bottom: 55%;
-  max-height: 1100px;
+  height: 0;
   .iconMenu{
     display: none;
 
@@ -183,7 +176,103 @@ header{
       display: block;
     }
   }
+}
 
+/* menu */
 
+nav{
+  h2{
+    float: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: $col-font-nav;
+    line-height: 50px;
+    margin-left: 2%;
+    span{
+      font-weight: 300;
+      color: $col-violet;
+    }
+    @media(min-width: 768px){
+      font-size: 20px;
+      line-height: 70px;
+    }
+    @media(min-width: 1200px){
+      font-size: 30px;
+      color: $col-font-nav;
+      line-height: 140px;
+    }
 
+  }
+  .menuHead{
+    float: right;
+    display: none;
+    li{
+      display: inline-block;
+      padding-left: 34px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      a{
+        color: $col-font-nav;
+        &:hover{
+          color: $col-violet;
+        }
+      }
+    }
+    @media(min-width: 900px){
+      display: block;
+      font-size: 12px;
+      line-height: 70px;
+    }
+    @media(min-width: 1200px){
+      font-size: 18px;
+      line-height: 140px;
+    }
+
+  }
+
+  .hamUnicode{
+    line-height: 50px;
+    a{
+      color: $col-font-nav;
+      float: right;
+      margin-right: 2%;
+    }
+    @media(min-width: 768px){
+      font-size: 20px;
+      line-height: 70px;
+    }
+  }
+
+  .menu_ham{
+    position: absolute;
+    margin-top: 50px;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    li{
+
+      &:nth-child(2n+1){
+        background-color: rgb(224, 224, 224);
+
+      }
+    }
+    a{
+      color: $col-font-nav;
+      text-decoration: none;
+      line-height: 30px;
+      &:hover{
+        color: $col-violet;
+      }
+    }
+
+  }
+  .hidden_Class{
+    display: none;
+  }
+  @media(min-width: 900px){
+    .menu_hamburger{
+      display: none;
+    }
+  }
 }
