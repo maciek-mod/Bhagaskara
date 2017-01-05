@@ -276,3 +276,110 @@ nav{
     }
   }
 }
+
+/*HOME*/
+.home{
+  background-color: $col-home;
+
+}
+.iconHeart ,.iconDiamont ,.iconCup ,.iconRwd{
+  display: inline-block;
+  text-align: center;
+  background-image: url("../images/icon-heart.png");
+  background-size: cover;
+  width: 100px;
+  height: 106px;
+  margin-top: 8%;
+
+  @media(min-width: 480px){
+    margin-top: 10%;
+
+  }
+  @media(min-width: 1200px){
+    width: 176px;
+    height: 190px;
+
+  }
+
+}
+.iconDiamont{
+  background-image: url("../images/icon-diamont.png");
+
+}
+.iconCup{
+  background-image: url("../images/icon-cup.png");
+
+}
+.iconRwd{
+  background-image: url("../images/icon-rwd.png");
+
+}
+
+.homeFlex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
+  @media(min-width: 992px){
+    height: 500px;
+  }
+  @media(min-width: 1200px){
+    height: 765px;
+  }
+  .homeCointener{
+    width: 280px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 12px;
+    color: $col-font-nav;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    @media(min-width: 1200px){
+      margin: 50px auto;
+    }
+    h2{
+      font-size: 14px;
+      margin: 11px 0 20px 0;
+    }
+
+    &:hover{
+      .iconHeart{
+        background-image: url("../images/icon-heart-hover.png");
+      }
+      .iconDiamont{
+        background-image: url("../images/icon-diamont-hover.png");
+
+      }
+      .iconCup{
+        background-image: url("../images/icon-cup-hover.png");
+
+      }
+      .iconRwd{
+        background-image: url("../images/icon-rwd-hover.png");
+
+      }
+
+    }
+    @media(min-width: 480px){
+      font-size: 15px;
+      h2{
+        font-size: 19px;
+      }
+    }
+    @media(min-width: 992px){
+      width: 24%;
+    }
+    @media(min-width: 1200px){
+      width: 280px;
+      font-size: 16px;
+      h2{
+        font-size: 24px;
+        margin: 43px 0 47px 0;
+      }
+    }
+
+  }
+
+
+
+}
