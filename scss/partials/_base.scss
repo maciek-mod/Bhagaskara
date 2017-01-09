@@ -413,6 +413,9 @@ nav{
     }
   }
   @media(min-width: 992px){
+    height: 850px;
+  }
+  @media(min-width: 1200px){
     height: 1027px;
   }
 
@@ -485,5 +488,72 @@ nav{
     height: 75px;
     font-size: 20px;
     line-height: 75px;
+  }
+}
+/*edu*/
+
+
+.edu{
+  background-image: url("../images/bacgroudEdu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  .iconEdu{
+    display: none;
+    @media(min-width: 768px){
+      display: block;
+        width: 103px;
+    }
+    @media(min-width: 992px){
+        width: 116px;
+    }
+    @media(min-width: 1200px){
+        width: 171px;
+    }
+  }
+  .flexEdu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+    .eduTXT{
+      p{
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        color: white;
+        @media(min-width: 768px){
+          font-size: 25px;
+        }
+        @media(min-width: 992px){
+          font-size: 35px;
+        }
+        @media(min-width: 1200px){
+            font-size: 48px;
+        }
+      }
+    }
+    @media(min-width: 768px){
+      height: 400px;
+    }
+    @media(min-width: 992px){
+      height: 500px;
+
+    }
+    @media(min-width: 1200px){
+        height: 626px;
+    }
+  }
+  @media(min-width: 768px){
+    height: 400px;
+  }
+  @media(min-width: 992px){
+    height: 500px;
+
+  }
+  @media(min-width: 1200px){
+      height: 626px;
   }
 }
