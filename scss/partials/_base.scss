@@ -383,12 +383,12 @@ nav{
 /*About Us*/
 
 .aboutUs{
-  height: 1027px;
+
   h2{
-    font-size: 48px;
+    font-size: 35px;
     font-family: 'Existence', sans-serif;
     color: $col-font-nav;
-    line-height: 370px;
+    line-height: 200px;
     text-align: center;
     &::before{
       content: "\231E";
@@ -407,38 +407,83 @@ nav{
         color: $col-violet;
       }
     }
+    @media(min-width: 992px){
+      font-size: 48px;
+      line-height: 370px;
+    }
   }
+  @media(min-width: 992px){
+    height: 1027px;
+  }
+
 }
 
 .more{
-  font-size: 16px;
-  line-height: 36px;
+  font-size: 12px;
+  margin-top: 15px;
+  line-height: 20px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  @media(min-width: 480px){
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  @media(min-width: 768px){
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 36px;
+  }
 }
 .ImagesAboutUs{
   background-image: url("../images/aboutUsMockup.png");
   background-size: contain;
   background-repeat: no-repeat;
-  max-width: 653px;
   padding-bottom: 63%;
+  max-width: 653px;
+
+  @media(min-width: 992px){
+    max-width: 653px;
+  }
 }
 .btnLearn{
-  margin-top: 79px;
-  display: inline-block;
+  margin: 35px auto;
+  display: block;
   border-radius: 5px;
-  width: 228px;
-  height: 75px;
+  width: 150px;
+  height: 40px;
   background-color: $col-violet;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
-  line-height: 75px;
+  line-height: 40px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: white;
   box-shadow: 0 5px 0 $col-box-shadow;
+  -webkit-box-shadow: 0 5px 0 $col-box-shadow;
   &:hover{
     text-decoration: none;
     color: white;
+  }
+  @media(min-width: 480px){
+    margin: 35px auto;
+    width: 170px;
+    height: 45px;
+    font-size: 17px;
+    line-height: 45px;
+  }
+  @media(min-width: 768px){
+    margin: 35px auto;
+    width: 190px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+  }
+  @media(min-width: 992px){
+    margin: 50px 0;
+    width: 228px;
+    height: 75px;
+    font-size: 20px;
+    line-height: 75px;
   }
 }
