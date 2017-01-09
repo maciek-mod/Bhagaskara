@@ -377,9 +377,68 @@ nav{
         margin: 43px 0 47px 0;
       }
     }
-
   }
+}
 
+/*About Us*/
 
+.aboutUs{
+  height: 1027px;
+  h2{
+    font-size: 48px;
+    font-family: 'Existence', sans-serif;
+    color: $col-font-nav;
+    line-height: 370px;
+    text-align: center;
+    &::before{
+      content: "\231E";
+      position: relative;
+      left: -20px;
+      top: 30px;
+      color: $col-violet;
+    }
+    span{
+      color: $col-violet;
+      &::after{
+        content: "\231D";
+        position: relative;
+        left: 13px;
+        top: -25px;
+        color: $col-violet;
+      }
+    }
+  }
+}
 
+.more{
+  font-size: 16px;
+  line-height: 36px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.ImagesAboutUs{
+  background-image: url("../images/aboutUsMockup.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 653px;
+  padding-bottom: 63%;
+}
+.btnLearn{
+  margin-top: 79px;
+  display: inline-block;
+  border-radius: 5px;
+  width: 228px;
+  height: 75px;
+  background-color: $col-violet;
+  font-size: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: white;
+  box-shadow: 0 5px 0 $col-box-shadow;
+  &:hover{
+    text-decoration: none;
+    color: white;
+  }
 }
