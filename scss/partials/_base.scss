@@ -382,8 +382,7 @@ nav{
 
 /*About Us*/
 
-.aboutUs{
-
+.headline{
   h2{
     font-size: 35px;
     font-family: 'Existence', sans-serif;
@@ -412,6 +411,9 @@ nav{
       line-height: 370px;
     }
   }
+}
+
+.aboutUs{
   @media(min-width: 992px){
     height: 850px;
   }
@@ -502,13 +504,13 @@ nav{
     display: none;
     @media(min-width: 768px){
       display: block;
-        width: 103px;
+      width: 103px;
     }
     @media(min-width: 992px){
-        width: 116px;
+      width: 116px;
     }
     @media(min-width: 1200px){
-        width: 171px;
+      width: 171px;
     }
   }
   .flexEdu{
@@ -531,7 +533,7 @@ nav{
           font-size: 35px;
         }
         @media(min-width: 1200px){
-            font-size: 48px;
+          font-size: 48px;
         }
       }
     }
@@ -543,7 +545,7 @@ nav{
 
     }
     @media(min-width: 1200px){
-        height: 626px;
+      height: 626px;
     }
   }
   @media(min-width: 768px){
@@ -554,6 +556,77 @@ nav{
 
   }
   @media(min-width: 1200px){
-      height: 626px;
+    height: 626px;
+  }
+}
+
+/*team*/
+
+.mirror{
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.btnTeam{
+  text-align: center;
+  margin-bottom: 170px;
+  display: none;
+  @media(min-width: 768px){
+    display: block;
+  }
+}
+.flexTeam{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media(min-width: 768px){
+    justify-content: space-between;
+  }
+}
+.imgUser{
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  background-color: #cdcdcd;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto;
+  margin-bottom: 85px;
+
+  @media(min-width: 992px){
+    width: 250px;
+    height: 250px;
+  }
+
+}
+.user1{
+  text-align: center;
+  width: 240px;
+  p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: $col-team;
+  }
+  .position{
+    font-weight: 400;
+    font-size: 18px;
+    color: $col-team-pos;
+  }
+  @media(min-width: 768px){
+    width: 240px;
+  }
+  @media(min-width: 992px){
+    width: 260px;
+  }
+}
+
+.socialMedia{
+  a{
+    img{
+      padding-top: 36px;
+      padding-bottom: 120px;
+    }
   }
 }
