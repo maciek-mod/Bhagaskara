@@ -451,7 +451,7 @@ nav{
     max-width: 653px;
   }
 }
-.btnLearn{
+.btnLearn ,.btnWatch{
   margin: 35px auto;
   display: block;
   border-radius: 5px;
@@ -697,5 +697,67 @@ nav{
   flex-wrap: wrap;
   @media(min-width: 992px){
     justify-content: space-between;
+    margin-bottom: 90px;
   }
+  @media(min-width: 1200px){
+    margin-bottom: 150px;
+  }
+}
+
+
+/*portfolio*/
+.portfolioBTN{
+  text-align: center;
+  margin-bottom: 70px;
+  a{
+    display: inline-block;
+    width: 84px;
+    height: 38px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    line-height: 38px;
+    text-align: center;
+    margin: 10px 10px;
+    &:hover{
+      color: $col-violet;
+      text-decoration: none;
+      border: 1px solid $col-violet;
+    }
+    &:active{
+      background-color: $col-violet;
+      color: white;
+      text-decoration: none;
+      border: 1px solid $col-violet;
+    }
+  }
+}
+.portfolioFlex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .portfolioItem{
+    width: 350px;
+    height: 433px;
+    text-align: center;
+    p{
+      font-family: 'HelveticaLigth', sans-serif;
+      font-size: 23px;
+      color: $col-team;
+    }
+    .portfolioFiltr{
+      font-size: 16px;
+      color: $col-team-pos;
+    }
+    @media(min-width: 992px){
+      width: 360px;
+      height: 433px;
+    }
+  }
+  @media(min-width: 768px){
+    justify-content: space-between;
+  }
+}
+.btnWatch{
+  margin: 62px auto;
 }
