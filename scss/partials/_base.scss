@@ -704,6 +704,66 @@ nav{
   }
 }
 
+/*banner*/
+
+.banner{
+  display: none;
+  @media(min-width: 768px){
+    display: block;
+    background-color: $col-grey;
+    text-align: center;
+    .bannerFlex{
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      font-size: 40px;
+      font-family: 'HelveticaLigth', sans-serif;
+      margin-top: 164px;
+      p{
+        font-size: 12px;
+        color: $col-team-pos;
+      }
+      @media(min-width: 1200px){
+        font-size: 64px;
+        p{
+          font-size: 16px;
+          color: $col-team-pos;
+        }
+
+      }
+    }
+    .circle{
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      background-color: #cdcdcd;
+      width: 171px;
+      height: 171px;
+      margin: 75px auto 26px auto;
+      @media(min-width: 1200px){
+        margin: 149px auto 46px auto;
+      }
+    }
+    .bannerTXT{
+      font-size: 25px;
+      color: $col-font-banner;
+      margin-bottom: 122px;
+      span{
+        font-size: 14px;
+        font-family: 'HelveticaBold', sans-serif;
+
+      }
+      @media(min-width: 1200px){
+        font-size: 33px;
+        margin-bottom: 232px;
+        span{
+          font-size: 20px;
+          font-family: 'HelveticaBold', sans-serif;
+
+        }
+      }
+    }
+  }
+}
 
 /*portfolio*/
 .portfolioBTN{
