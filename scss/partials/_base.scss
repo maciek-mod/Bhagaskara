@@ -630,3 +630,72 @@ nav{
     }
   }
 }
+
+
+/*Skills*/
+.skill{
+  width: 269px;
+  display: inline-block;
+  p{
+    font-size: 22px;
+    font-family: 'HelveticaBold', sans-serif;
+    float: left;
+  }
+  .procent{
+    font-size: 24px;
+    font-family: 'HelveticaLigth', sans-serif;
+    float: right;
+  }
+  .bar{
+    height: 20px;
+    width: 296px;
+    background-color: $col-bar;
+    float: left;
+    margin-top: 26px;
+    margin-bottom: 70px;
+    .progress{
+      width: 90%;
+      background-color: $col-violet;
+      height: 100%;
+    }
+    .progressGraphic{
+      width: 70%;
+      background-color: $col-violet;
+      height: 100%;
+    }
+    .progressHtml{
+      width: 75%;
+      background-color: $col-violet;
+      height: 100%;
+    }
+
+    .progressUi{
+      width: 85%;
+      background-color: $col-violet;
+      height: 100%;
+
+    }
+    @media(min-width: 500px){
+      width: 450px;
+    }
+    @media(min-width: 992px){
+      margin-top: 26px;
+      margin-bottom: 46px;
+    }
+
+  }
+  @media(min-width: 500px){
+    width: 420px;
+  }
+}
+
+
+
+.skillFlex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media(min-width: 992px){
+    justify-content: space-between;
+  }
+}
