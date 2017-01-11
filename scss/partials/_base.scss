@@ -978,3 +978,37 @@ nav{
   }
 
 }
+
+/*footer*/
+footer{
+  text-align: center;
+  p{
+    font-size: 20px;
+    line-height: 100px;
+    font-family: 'Existence', sans-serif;
+    color: $col-font-nav;
+    span{
+      color: $col-violet;
+    }
+    @media(min-width: 480px){
+      font-size: 25px;
+      line-height: 130px;
+    }
+    @media(min-width: 600px){
+      font-size: 30px;
+      line-height: 160px;
+    }
+    @media(min-width: 768px){
+      font-size: 35px;
+      line-height: 190px;
+    }
+    @media(min-width: 768px){
+      font-size: 40px;
+      line-height: 240px;
+    }
+    @media(min-width: 1200px){
+      font-size: 51px;
+      line-height: 300px;
+    }
+  }
+}
