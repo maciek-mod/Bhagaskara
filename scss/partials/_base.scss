@@ -821,3 +821,82 @@ nav{
 .btnWatch{
   margin: 62px auto;
 }
+
+/*formularz*/
+.form{
+  text-align: center;
+  input ,textarea{
+    height: 50px;
+    width: 290px;
+    font-size: 14px;
+    font-family: 'HelveticaLigth', sans-serif;
+    line-height: 50px;
+    padding-left: 15px;
+    border: 1px solid $col-team-pos;
+    @include placeholder{
+      color: $col-font-form;
+    }
+    margin-bottom: 20px;
+  }
+  textarea{
+    height: 282px;
+    width: 290px;
+    max-width: 290px;
+  }
+  .sendMail{
+    margin:0 auto;
+  }
+  @media(min-width: 480px){
+    input ,textarea{
+      width: 320px;
+
+    }
+    textarea{
+      width: 320px;
+      max-width: 320px;
+    }
+
+  }
+  @media(min-width: 600px){
+    input ,textarea{
+      font-size: 16px;
+      width: 350px;
+
+    }
+    textarea{
+      width: 350px;
+      max-width: 350px;
+    }
+
+  }
+  @media(min-width: 992px){
+    input ,textarea{
+      font-size: 18px;
+      width: 400px;
+
+    }
+    textarea{
+      width: 400px;
+      max-width: 400px;
+    }
+
+  }
+  @media(min-width: 1200px){
+    input ,textarea{
+      height: 72px;
+      width: 526px;
+      font-size: 22px;
+      line-height: 72px;
+      margin-bottom: 39px;
+    }
+    textarea{
+      height: 282px;
+      width: 526px;
+      max-width: 526px;
+    }
+    .sendMail{
+      margin:0;
+    }
+  }
+
+}
