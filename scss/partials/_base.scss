@@ -895,7 +895,85 @@ nav{
       max-width: 526px;
     }
     .sendMail{
-      margin:0;
+      margin: 0 0 0 12px;
+    }
+  }
+
+}
+
+.formAdress{
+
+  text-align: left;
+  .adress{
+    margin: 0 auto;
+    width: 290px;
+    .formTxt{
+      font-family: 'HelveticaLigth', sans-serif;
+      font-size: 14px;
+      color: $col-font-banner;
+      margin-top: 50px;
+    }
+    .formAdress{
+      font-family: 'HelveticaBold', sans-serif;
+      font-size: 16px;
+      color: $col-font-form;
+    }
+    .formIcon{
+      text-align: center;
+      img{
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        @media(min-width: 768px){
+          margin-top: 30px;
+          width: 60px;
+          height: 60px;
+        }
+        @media(min-width: 992px){
+          margin-top: 30px;
+          width: 80px;
+          height: 80px;
+        }
+      }
+      @media(min-width: 1200px){
+        text-align: left;
+      }
+    }
+
+    @media(min-width: 768px){
+      .formTxt{
+        margin-top: 0;
+        font-size: 18px;
+      }
+      .formAdress{
+        font-size: 22px;
+      }
+    }
+    @media(min-width: 992px){
+      .formTxt{
+        margin-top: 0;
+        font-size: 20px;
+      }
+      .formAdress{
+        font-size: 26px;
+      }
+    }
+    @media(min-width: 1200px){
+      .formTxt{
+        font-size: 22px;
+      }
+      .formAdress{
+        font-size: 28px;
+      }
+    }
+    @media(min-width: 480px){
+      width: 320px;
+    }
+    @media(min-width: 600px){
+      width: 350px;
+    }
+    @media(min-width: 768px){
+      width: 100%;
     }
   }
 
