@@ -7,6 +7,7 @@ $(function(){
   var menuHamburger = menu.find(".menu_ham");
   var link = menuHamburger.find("a");
   var menuPos = menu.offset().top;
+  var body = $("html, body");
 
   //przyklejone menu
   function setSticky(){
@@ -28,15 +29,13 @@ $(function(){
   function scrollMenu(href){
     var find = $(href);
     var pos = $(find).position();
-
-    var body = $("html, body")
     body.stop().animate({scrollTop: pos.top}, 2000, "swing");
 
   }
 
   //plynne przewijanie menu
   hamMenuShow.on("click", function(){
-    event.preventDefault();
+    e.preventDefault();
     menuHamburger.toggleClass("hidden_Class");
 
 
@@ -60,6 +59,27 @@ $(function(){
     scrollMenu(href);
   });
 
+  //przesuniecie po kliknieciu w strzałke
+  var arrowSlide = $(".arrowDown");
+
+  arrowSlide.on("click", function(e){
+    e.preventDefault();
+    console.log(menu.offset().top);
+    body.stop().animate({scrollTop: menu.offset().top}, 2000, "swing");
+
+  });
+
+  //icon menu
+
+  var iconMenu = $(".iconMenu");
+  var iconMenuLink = iconMenu.find("a");
+
+  iconMenuLink.on("click", function(e){
+    e.preventDefault();
+
+    var href = $(this).attr("href");
+    scrollMenu(href);
+  });
 
 
 
