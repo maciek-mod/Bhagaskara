@@ -596,9 +596,8 @@ nav{
     justify-content: space-between;
   }
 }
-.imgUser{
-  -webkit-clip-path: circle(50% at 50% 50%);
-  clip-path: circle(50% at 50% 50%);
+.imgUser{ 
+  @include clip-path(circle(50% at 50% 50%));
   background-color: #cdcdcd;
   width: 220px;
   height: 220px;

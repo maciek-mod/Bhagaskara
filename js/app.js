@@ -34,13 +34,13 @@ $(function(){
   }
 
   //plynne przewijanie menu
-  hamMenuShow.on("click", function(){
-    event.preventDefault();
+  hamMenuShow.on("click", function(e){
+    e.preventDefault();
     menuHamburger.toggleClass("hidden_Class");
 
   });
-  link.on("click", function(){
-    event.preventDefault();
+  link.on("click", function(e){
+    e.preventDefault();
     var href = $(this).attr("href");
     scrollMenu(href);
     menuHamburger.toggleClass("hidden_Class");
@@ -53,7 +53,7 @@ $(function(){
   var linkDeskop = deskopMenu.find("a");
 
   linkDeskop.on("click", function(e){
-    event.preventDefault();
+    e.preventDefault();
 
     var href = $(this).attr("href");
     scrollMenu(href);

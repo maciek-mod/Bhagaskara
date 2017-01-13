@@ -8,8 +8,8 @@ $(function(){
   var btn = $(".btnSelect");
   var selectFiltr = "";
 
-  btn.click(function(){
-    event.preventDefault();
+  btn.click(function(e){
+    e.preventDefault();
     selectFiltr = $(this).attr("data-filter");
     $(".portfolioFlex").fadeTo(100, 0.1);
     portfolioDiv.not("." + selectFiltr).fadeOut();
