@@ -35,25 +35,25 @@ $(function(){
 
   //plynne przewijanie menu
   hamMenuShow.on("click", function(){
-    e.preventDefault();
+    event.preventDefault();
     menuHamburger.toggleClass("hidden_Class");
 
-
   });
-
-  link.on("click", function(e){
-    e.preventDefault();
+  link.on("click", function(){
+    event.preventDefault();
     var href = $(this).attr("href");
     scrollMenu(href);
     menuHamburger.toggleClass("hidden_Class");
   });
+
+
 
   // menu 768px+ / deksop menu
   var deskopMenu = $(".menuHead");
   var linkDeskop = deskopMenu.find("a");
 
   linkDeskop.on("click", function(e){
-    e.preventDefault();
+    event.preventDefault();
 
     var href = $(this).attr("href");
     scrollMenu(href);
