@@ -141,41 +141,117 @@ header{
     .iconMenu{
       display: block;
       margin-top: 2%;
-      img{
+      // img{
+      //   &:hover{
+      //     -webkit-mask-box-image: url("../images/maskMenu.svg");
+      //     background-color: $col-violet;
+      //   }
+      // }
+      .servicesIconMenu{
+        background-image: url("../images/icon-service.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
         &:hover{
-          -webkit-mask-box-image: url("../images/maskMenu.svg");
-          background-color: $col-violet;
+          background-image: url("../images/ServicesHover.png");
         }
+      }
+      .portfolioIconMenu{
+        background-image: url("../images/icon-portfolio.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: url("../images/PortfolioHover.png");
+        }
+      }
+      .aboutIconMenu{
+        background-image: url("../images/icon-about.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: url("../images/AboutHover.png");
+        }
+      }
+      .teamIconMenu{
+        background-image: url("../images/icon-team.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: url("../images/TeamHover.png");
+        }
+      }
+      .blogIconMenu{
+        background-image: url("../images/icon-blog.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: url("../images/BlogHover.png");
+        }
+      }
+      .contactIconMenu{
+        background-image: url("../images/icon-contact.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover{
+          background-image: url("../images/ContactHover.png");
+        }
+      }
+      .icon{
+        display: inline-block;
       }
     }
   }
   @media(min-width: 992px){
     .icon{
-      width: 82%;
-      max-width: 171px;
+      width: 111px;
+      height: 120px;
     }
   }
   @media(min-width: 1200px){
     .icon{
-      width: 82%;
-      max-width: 171px;
+      width: 124px;
+      height: 134px;
+
     }
   }
-  @media(min-width: 1300px){
+  @media(min-width: 1310px){
     .icon{
-      width: 100%;
-      max-width: 171px;
+      width: 171px;
+      height: 185px;
+
     }
   }
-  .arrow{
-    display: none;
-    margin: 0 auto;
-    width: 7%;
-    max-width: 90px;
-    @media(min-width: 900px){
-      display: block;
+  .arrowDown{
+    text-align: center;
+    .arrow{
+      display: none;
+      height: 70px;
+      width: 64px;
+      background-image: url("../images/arrow.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      @media(min-width: 900px){
+        display: inline-block;
+      }
+      @media(min-width: 1200px){
+        height: 83px;
+        width: 77px;
+      }
+      @media(min-width: 1310px){
+        height: 97px;
+        width: 90px;
+      }
+      &:hover{
+        background-image: url("../images/arrowHover.png");
+      }
     }
   }
+
 }
 
 /* menu */
@@ -596,7 +672,7 @@ nav{
     justify-content: space-between;
   }
 }
-.imgUser{ 
+.imgUser{
   @include clip-path(circle(50% at 50% 50%));
   background-color: #cdcdcd;
   width: 220px;
