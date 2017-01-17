@@ -8,10 +8,13 @@ $(function(){
   var link = menuHamburger.find("a");
   var menuPos = menu.offset().top;
   var body = $("html, body");
+  var skill = $(".socialMedia").offset().top;
+  console.log(skill);
 
   //przyklejone menu
   function setSticky(){
-    var posDoc = $(document).scrollTop();
+
+    var posDoc = $(window).scrollTop();
     if (posDoc > menuPos) {
       menu.addClass("fixedMenu");
     }else {
@@ -81,6 +84,32 @@ $(function(){
     scrollMenu(href);
   });
 
+  //progres bar's
 
+  var web = $(".progress");
+  var grapfic = $(".progressGraphic");
+  var htmlProcent = $(".progressHtml");
+  var ui = $(".progressUi");
+
+  function animateProgres(){
+
+    var posDoc = $(window).scrollTop();
+    if (posDoc > skill) {
+      web.animate({width: "90%"},1000);
+      grapfic.animate({width: "70%"},1000);
+      htmlProcent.animate({width: "75%"},1000);
+      ui.animate({width: "85%"},1000);
+    }
+
+
+  }
+
+
+  $(window).on("scroll", function (e){
+
+    setSticky();
+    animateProgres();
+
+  });
 
 });
