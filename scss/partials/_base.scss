@@ -649,6 +649,8 @@ nav{
 
 /*team*/
 
+
+
 .mirror{
   -moz-transform: scale(-1, 1);
   -webkit-transform: scale(-1, 1);
@@ -687,8 +689,9 @@ nav{
 
 }
 .user1{
-  text-align: center;
+  margin: 0 auto;
   width: 240px;
+  text-align: center;
   p{
     font-family: 'Lato', sans-serif;
     font-weight: 600;
@@ -700,8 +703,12 @@ nav{
     font-size: 18px;
     color: $col-team-pos;
   }
-  @media(min-width: 768px){
+  @media(max-width: 767px){
+    margin: 0 auto;
     width: 240px;
+  }
+  @media(min-width: 768px){
+    width: 220px;
   }
   @media(min-width: 992px){
     width: 260px;
