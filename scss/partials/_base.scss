@@ -649,6 +649,13 @@ nav{
 
 /*team*/
 
+#team{
+  .item{
+    @media(max-width: 767px){
+      display: block; 
+    }
+  }
+}
 
 
 .mirror{
